@@ -35,9 +35,14 @@ public class App
                     System.out.println("Resultado de la multiplicacion es: " + resultado);
                     break;
                 case 4:
-                    resultado = calculator.divide(num1, num2);
-                    System.out.println("Resultado de la división es: " + resultado);
-                    break;
+                    try {
+                        resultado = calculator.divide(num1, num2);
+                        System.out.println("Resultado de la división es: " + resultado);
+                        break;
+                    }
+                    catch (Exception n2) {
+                        System.out.println ("No se puede dividir por cero");
+                    }
                 case 5:
                     System.out.println("Adiós");
                     break;
